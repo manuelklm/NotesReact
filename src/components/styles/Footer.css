@@ -1,0 +1,18 @@
+.footerText {
+    color: #9297a3;
+}
+
+.footerLink:link {
+    color: rgb(15, 138, 35);
+    text-decoration: none;
+}
+
+.footerLink:visited {
+    color: rgb(10, 88, 23);
+    text-decoration: none;
+}
+
+.footerLink:hover, .footerLink:active {
+    color: rgb(19, 172, 44);
+    text-decoration: underline;
+}
