@@ -107,6 +107,8 @@ You don't have to use eject. The default configuration is suitable for most smal
 
 ### firebase deploy
 
+**Note: Make sure you build the project before deployment!**
+
 Deploys your firebase application to the web. The analytics can be tracked via the firebase console.
 
 ## Learn More
