@@ -1,0 +1,29 @@
+.loggedInDiv {
+    font-size: medium;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+#signOutButton {
+    background-color: var(--accent-color);
+    border: none;
+    margin: 10px;
+    height: 35px;
+    width: 100px;
+    color: #dddcdc;
+    font-size: small;
+    font-weight: bold;
+    box-shadow: var(--box-shadow);
+}
+
+#textDiv {
+    justify-self: start;
+}
+
+#buttonDiv {
+    justify-self: right;
+}

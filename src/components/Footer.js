@@ -4,7 +4,7 @@ import './styles/Footer.css';
 function Footer() {
     return (
         <div>
-            <p className="footerText">If you want to learn how this website was built, click <a  className="footerLink" href="https://chatgpt.com/">this link</a>.</p>
+            <p className="footerText">Click <a className="footerLink" href="https://chatgpt.com/">here</a> to see how this website was built.</p>
         </div>
     );
 }

@@ -1,0 +1,115 @@
+.authDiv {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    
+    height: 75vh;
+    background-color: var(--root-background-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#authHeader {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 25%;
+    padding-top: 2%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputField {
+    font-size: medium;
+    color: white;
+    background-color: var(--input-background-color);
+    outline: none;
+    border: none;
+    height: 45px;
+    width: 75%;
+    margin-bottom: 15px;
+    padding: 0;
+    box-shadow: var(--box-shadow);
+    transition: box-shadow ease 0.25s;
+}
+
+.inputField:focus {
+    box-shadow: var(--box-shadow-focus);;
+}
+
+#emailInput {
+    width: 74%;
+    padding-left: 10px;
+}
+
+#passwordInput {
+    padding-left: 10px;
+    width: 92%;
+}
+
+.passwordField {
+    display: flex;
+    width: 75%;
+}
+
+.togglePasswordButton {
+    color: white;
+    height: 45px;
+    width: 8%;
+    margin-bottom: 15px;
+    border: none;
+    background-color: #565c64c4;
+    padding: 0;
+    box-shadow: var(--box-shadow);
+}
+
+.submitButtonsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.submitButton {
+    height: 45px;
+    width: 37%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    background-color: var(--accent-color);
+    font-size: medium;
+    color: #dddcdc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.errorMessage {
+    color: rgb(170, 56, 56);
+    margin-top: 30px;
+    font-size: 27px;
+    text-shadow: 2px 2px 5px rgb(77, 17, 17);
+}
+
+@media (max-width: 768px) {
+    .passwordField {
+        width: 76.5%;
+    }
+
+    .togglePasswordButton {
+        width: 15%;
+    }
+
+    .errorMessage {
+        font-size: medium;
+    }
+
+    .authDiv {
+        width: 90vw;
+    }
+}

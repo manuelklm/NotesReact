@@ -1,3 +1,24 @@
+* {
+  border-radius: 0;
+}
+
+:root {
+  --root-background-color: #3a3f47;
+  --input-background-color: #494f58;
+  --accent-color: rgba(79, 121, 37, 0.801);
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --box-shadow-focus: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19)
+}
+
+button {
+  transition: opacity ease 0.25s;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

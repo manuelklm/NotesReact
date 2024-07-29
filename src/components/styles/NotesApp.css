@@ -6,9 +6,7 @@
 #addNoteDiv {
     background-color: #3a3f47;
     display: flex;
-    border: 2px solid black;
-    border-radius: 17px;
-    transition: border-color ease 0.25s;
+    box-shadow: var(--box-shadow);
 }
 
 #newNoteTextField {
@@ -18,36 +16,18 @@
     padding-left: 10px;
     margin-right: 25px;
     width: 75%;
-    
     border: none;
-
-    border-radius: 15px;
-    border-end-end-radius: 0;
-    border-start-end-radius: 0;
-
     background-color: #3a3f47;
-    border-right: none;
     outline: none;
 }
 
 #newNoteButton {
     padding: 0;
     font-size: medium;
-    height: 47px;
     width: 25%;
-    
     border: none;
-
-    border-radius: 15px;
-    border-start-start-radius: 0;
-    border-end-start-radius: 0;
-
-    border-left: none;
     background-color: rgba(90, 143, 38, 0.808);
-}
-
-#addNoteDiv:hover {
-    border-color: rgb(44, 44, 44);
+    color: black;
 }
 
 #newNoteTextField:hover {
@@ -64,21 +44,21 @@
     display: grid;
     list-style-type: none;
     padding: 0;
-    overflow-x: auto; /* Horizontale Scrollbar bei Bedarf anzeigen */
-    white-space: nowrap; /* Verhindert Zeilenumbrüche */
+    margin-bottom: 80px;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .noteListItem {
     height: 47px;
-    display: flex; /* Elemente bleiben in einer Reihe */
+    display: flex; 
     background-color: #3a3f47;
 
     margin-bottom: 15px;
-    border-radius: 15px;
-    overflow: hidden; /* Verhindert, dass der Inhalt über die festgelegte Breite hinausragt */
-    text-overflow: ellipsis; /* Zeigt "..." an, wenn der Inhalt abgeschnitten wird */
-    white-space: nowrap; /* Verhindert Zeilenumbrüche im Inhalt */
-
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    box-shadow: var(--box-shadow);
 }
 
 .noteListItemText {
@@ -90,9 +70,6 @@
     font-size: medium;
     color: white;
     width: 75%;
-    border-radius: 15px;
-    border-end-end-radius: 0;
-    border-start-end-radius: 0;
 }
 
 .noteListItemButton {
@@ -111,15 +88,10 @@
     color: rgb(255, 255, 255);
     background-color: rgba(126, 34, 34, 0.808);
     padding: 0;
-
-    border-radius: 15px;
-    border-start-start-radius: 0;
-    border-end-start-radius: 0;
-
-    transition: background-color ease 0.25s;
 }
 
-#removeNoteButton:hover {
-    background-color: rgba(153, 41, 41, 0.808);
-    cursor: pointer;
+@media (max-width: 768px) {
+    #newNoteButton {
+        width: 25.5%;
+    }
 }
